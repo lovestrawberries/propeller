@@ -1,0 +1,62 @@
+.section-heading-button {
+    background-color: rgb(139, 29, 160);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 25px 15px 25px 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+    -webkit-box-shadow: 0 2px 2px 0px #000000;
+    box-shadow: 0 2px 2px 0px #000000;
+    margin-bottom: 4px;
+}
+
+.active .section-heading-button, .section-heading-button:hover {
+    background-color: rgb(84, 44, 168);
+}
+
+.section-heading-button:after {
+    font-family: FontAwesome;
+    content: "\F107";
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    float: right;
+    margin-left: 5px;
+    font-style: normal;
+}
+
+.active .section-heading-button:after {
+    font-family: FontAwesome;
+    content: "\F106";
+}
+
+.section-content {
+    display: none;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    border: 1px solid rgb(230, 230, 230);;
+    border-top: none;
+    width: inherit;
+    padding: 14px;
+    margin-bottom: 2px;
+    font-size: small;
+    color: rgb(128, 128, 128);
+    background-color: white;
+    overflow: hidden;
+}
+
+.active .section-content {
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    display: block;
+    width: 100%;
+}
